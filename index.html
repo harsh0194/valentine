@@ -33,6 +33,7 @@
       border-radius: 8px;
       cursor: pointer;
       margin: 10px;
+      transition: all 0.2s ease;
     }
 
     #yes {
@@ -60,8 +61,10 @@
         "<h1>I love you forever 💕</h1><p>Happy Valentine’s Day ❤️</p>";
     };
 
-    document.getElementById("no").onclick = function () {
-      alert("Nice try 😏");
+    document.getElementById("no").onmouseover = function () {
+      this.style.position = "absolute";
+      this.style.left = Math.random() * 80 + "%";
+      this.style.top = Math.random() * 80 + "%";   
     };
   </script>
 
